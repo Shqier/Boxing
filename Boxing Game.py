@@ -10,19 +10,19 @@ def boxing_game():
         return
     
     player_choice = int(player_choice)
-    computer_choice = random.randint(1, 4)
+    opponent_choice = random.randint(1, 4)
     
     print(f"Player chose: {player_choice}")
-    print(f"Computer chose: {computer_choice}")
+    print(f"Opponent chose: {opponent_choice}")
     
-    if player_choice == computer_choice:
+    if player_choice == opponent_choice:
         print("It's a tie!")
-    elif (player_choice == 1 and computer_choice == 3) or \
-         (player_choice == 3 and computer_choice == 2) or \
-         (player_choice == 2 and computer_choice == 4) or \
-         (player_choice == 4 and computer_choice == 1):
+    elif (player_choice == 1 and opponent_choice == 3) or \
+         (player_choice == 3 and opponent_choice == 2) or \
+         (player_choice == 2 and opponent_choice == 4) or \
+         (player_choice == 4 and opponent_choice == 1):
         print("Player wins!")
     else:
-        print("Computer wins!")
+        print("Opponent wins!")
 
 boxing_game()
